@@ -99,7 +99,7 @@ python test.py --voxel_size=0.3
 **Note:** For results matching Table 3 in the paper, exclude lines 4300–4500 from the 2012-05-26 trajectory.
 
 ## Model Zoo
-Pretrained models (backbone and scene-specific prediction heads) are available for download [here](https://drive.google.com/drive/folders/1G0XML5gWBk0dmOJJ5CYnvPhoDZO68Qpt?usp=sharing).
+Pretrained models (backbone and scene-specific prediction heads) are available for download [here](https://drive.google.com/drive/folders/1ZuEs7NbVGO8afqTZM0xCYJgeLtNzPbt0?usp=sharing).
 
 ## Citation
 If you find this codebase useful in your research, please cite our work:
