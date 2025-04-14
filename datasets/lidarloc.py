@@ -202,7 +202,7 @@ class LiDARLocDataset(Dataset):
             num = 0
             for i in idx:
                 scan_path = self.pcs[i]
-                ptcld = np.fromfile(scan_path, dtype=np.float32).reshape(-1, 4)[:, :3]
+                ptcld = np.fromfile(scan_path, dtype=np.float32).reshape(4, -1).transpose()[:, :3]
                 # just for z-axis up
                 ptcld[:, 2] = -1 * ptcld[:, 2]
 
@@ -244,7 +244,7 @@ class LiDARLocDataset(Dataset):
         else:
             # For Regression training
             scan_path = self.pcs[idx]
-            ptcld = np.fromfile(scan_path, dtype=np.float32).reshape(-1, 4)[:, :3]
+            ptcld = np.fromfile(scan_path, dtype=np.float32).reshape(4, -1).transpose()[:, :3]
             # just for z-axis up
             ptcld[:, 2] = -1 * ptcld[:, 2]
             scan = ptcld
