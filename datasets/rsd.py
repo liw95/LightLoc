@@ -55,7 +55,7 @@ class RSD(Dataset):
 
     def __getitem__(self, idx):
         scan_path = self.dataset.pcs[idx]
-        ptcld = np.fromfile(scan_path, dtype=np.float32).reshape(-1, 4)[:, :3]
+        ptcld = np.fromfile(scan_path, dtype=np.float32).reshape(4, -1).transpose()[:, :3]
         ptcld[:, 2] = -1 * ptcld[:, 2]
 
         scan = ptcld
