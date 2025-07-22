@@ -1,6 +1,8 @@
 # LightLoc: Learning Outdoor LiDAR Localization at Light Speed
 
-**[Paper](https://arxiv.org/pdf/2503.17814)** | **[Poster](https://drive.google.com/file/d/1Q5B6Ec4NN-NArkpaAjupIMamdCnwTknp/view?usp=sharing)**
+[Paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Li_LightLoc_Learning_Outdoor_LiDAR_Localization_at_Light_Speed_CVPR_2025_paper.pdf) 
+[Supp](https://openaccess.thecvf.com/content/CVPR2025/supplemental/Li_LightLoc_Learning_Outdoor_CVPR_2025_supplemental.pdf)
+[Poster](https://drive.google.com/file/d/1Q5B6Ec4NN-NArkpaAjupIMamdCnwTknp/view?usp=sharing)
 
 <img src="img/Teaser.png" width=500>
 
