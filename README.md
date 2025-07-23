@@ -106,10 +106,11 @@ Pretrained models (backbone and scene-specific prediction heads) are available f
 ## Citation
 If you find this codebase useful in your research, please cite our work:
 ```
-@article{li2025lightloc,
+@inproceedings{li2025lightloc,
   title={LightLoc: Learning Outdoor LiDAR Localization at Light Speed},
   author={Li, Wen and Liu, Chen and Yu, Shangshu and Liu, Dunqiang and Zhou, Yin and Shen, Siqi and Wen, Chenglu and Wang, Cheng},
-  journal={arXiv preprint arXiv:2503.17814},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={6680--6689},
   year={2025}
 }
 ```
