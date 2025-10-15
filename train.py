@@ -449,6 +449,7 @@ class Trainer:
             features_bC[:(batch_size * num_point), :self.options.level_cluster] += torch.empty_like(
                 features_bC[:(batch_size * num_point), :self.options.level_cluster]).normal_(mean=0, std=0.1,
                                                                                         generator=self.gn_generator)
+            features_bC[:,:self.options.level_cluster]=torch.nn.functional.normalize(features_bC[:,:self.options.level_cluster],dim=1)
             target_bC[:(batch_size * num_point)] = gt_sup_point[random_indices]
             batch_bC[:(batch_size * num_point)] = batch_nums[random_indices]
 
