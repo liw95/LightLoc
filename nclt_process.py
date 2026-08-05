@@ -38,7 +38,7 @@ def load_velodyne_binary_nclt(filename):
 
     return hits
 
-def processing(seq):
+def processing(data_root, seq):
     file_list = glob.glob(data_root + seq + '/velodyne_sync/*.bin')
     for file in file_list:
         print(file)
@@ -47,8 +47,8 @@ def processing(seq):
 
 
 if __name__ == '__main__':
-    seqs = ['2012-02-18', '2012-02-19', '2012-03-31', '2012-05-11'
-            , '2012-02-12', '2012-03-17', '2012-03-25', '2012-05-26']
+    seqs = ['2012-01-22', '2012-02-02', '2012-02-18', '2012-05-11'
+            , '2012-02-12', '2012-02-19', '2012-03-31', '2012-05-26']
     # Please modify the ‘xx’ as the path of your dataset  e.g., /home/lw/NCLT/
     data_root = '/home/lw/NCLT/'
     for seq in seqs:
